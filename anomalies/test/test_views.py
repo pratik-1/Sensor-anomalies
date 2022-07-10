@@ -13,7 +13,8 @@ class TestAnomaliesApi(TestSetUp):
         response = self.client.get(reverse('count_anomalies', kwargs=self.param['input']))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data,
-            f"The count of anomalies for sensor_id {self.param['input']['sensor_id']} is {self.param['expected_output']}")
+                         {'message' : f"The count of anomalies for sensor_id {self.param['input']['sensor_id']} is {self.param['expected_output']}"})
 
-
-
+    def test_anomalies_using_parameterized_sensor_wrong_id(self):
+        response = self.client.get(reverse('count_anomalies', kwargs=self.param_wid['input']))
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
