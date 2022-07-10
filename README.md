@@ -140,8 +140,8 @@ You can create more users and provide them the access using administration login
 http://127.0.0.1:8000/admin/
 ```
 Enter the below credentials for elevated access
-- username: admin-user
-- passwor: admin-user
+- **username**: admin-user
+- **password**: admin-user
 
 
 # Stop the Containers
@@ -151,7 +151,7 @@ docker-compose down
 
 
 # Project Artifacts
-- Data :- The sensor's anomalies data is stored in `anomalies/static/` folder. In production, project can be easily connected to any databases.
-- Tests :- The project follows Test Driven Development (TDD) approach. Sample tests modules for anomalies app can be found in `anomalies/test/` folder.  Try running tests using `pytest -v` command.
-- Fixtures :- For testing, dummy data can be found  `anomalies/fixtures/`.
-- Test Report :- You can find `test_report.html`  in the project root folder. 
+- **Data**: The sensor's anomalies data is stored in `anomalies/static/` folder. In production, project can be easily connected to any databases.
+- **Tests**: The project follows Test Driven Development (TDD) approach. Sample tests modules for anomalies app can be found in `anomalies/test/` folder.  Try running tests using `pytest -v` command.
+- **Fixtures**: For testing, dummy data can be found  `anomalies/fixtures/`.
+- **Test Report**: You can find `test_report.html`  in the project root folder. 
