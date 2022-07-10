@@ -28,4 +28,3 @@ def count_anomalies(readings, model):
             if abs(sample_i - means_i[ix]) > nsigma * sigma:
                 count += 1
     return count
-

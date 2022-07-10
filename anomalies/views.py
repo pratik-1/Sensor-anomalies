@@ -13,5 +13,8 @@ class CountAnomalies(APIView):
         if sensor_id is None:
             return Response('Please provide the SensorId in query parameter (For ex: /count-anomalies/cr123/)')
         elif sensor_id:
-            count = get_count_anomalies(sensor_id)
-            return Response(f'The count of anomalies for sensor_id {sensor_id} is {count}')
+            try:
+                count = get_count_anomalies(sensor_id)
+                return Response(f'The count of anomalies for sensor_id {sensor_id} is {count}')
+            except:
+                return Response(f'Sorry sensor_id not found in model database. Please try different ID.')
