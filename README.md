@@ -87,7 +87,7 @@ The file `model.json` contains sensor models.
 # Project setup
 **Prerequisites**:
 
-Your machine needs to have below pre-requisites installed on your machine:
+Your machine needs to have below pre-requisites installed:
 - Docker
 - Git
 
