@@ -86,12 +86,13 @@ The file `model.json` contains sensor models.
 
 # Project setup
 **Prerequisites**:
+
 Your machine needs to have below pre-requisites installed on your machine:
 - Docker
 - Git
 
 
-Enter the below command in your shell to clone the repository
+To get started enter the below command in your shell to clone the repository
 ```commandline
 git clone https://github.com/pratik-1/Sensor-anomalies.git
 ```
