@@ -85,9 +85,10 @@ The file `model.json` contains sensor models.
 
 
 # Project setup
-**Pre-requisites installations**: 
-- Docker installed
-- Git installed
+**Prerequisites**:
+Your machine needs to have below pre-requisites installed on your machine:
+- Docker
+- Git
 
 
 Enter the below command in your shell to clone the repository
